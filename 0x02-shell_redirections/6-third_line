@@ -1,2 +1,2 @@
 #!/bin/bash
-head -3 /tmp/h
+cat iacta | head -n 3 | tail -n -1
