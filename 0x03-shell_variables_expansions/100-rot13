@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $TEXT | tr '65-90 97-122' '78-90 65-77 110-122 97-109'
+echo $TEXT | tr '[A-Z][a-z]' '[N-ZA-M][n-za-m]'
