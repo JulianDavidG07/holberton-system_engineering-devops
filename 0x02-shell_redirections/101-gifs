@@ -1,3 +1,4 @@
 #!/bin/bash
-find -type f -name '*.gif' -printf '%f\n' | LC_ALL=C sort -f | rev | cut --delimeter=. --field=2- | rev
+find -type f -name '*.gif' | -empty wc -l | LC_ALL=C sort -f | rev | cut --delimeter=. --field=2- | rev
+
 
