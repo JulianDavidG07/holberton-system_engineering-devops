@@ -1,18 +1,17 @@
 #!/usr/bin/env bash
 # check if file exists
 
-if [ -e holbertonschool ]
-then
+if [ -e holbertonschool ]; then
     echo "holbertonschool file exists"
-    if [ -s holbertonschool ]
-    then 
-    echo "holbertonschool file is not empty"
+
+    if [ -s holbertonschool ]; then 
+        echo "holbertonschool file is not empty"
     else
-    echo "holbertonschool file is empty"
-    if [ -f holbertonschool ]
-    then
-    echo "holbertonschool is a regular file"
+        echo "holbertonschool file is empty"
     fi
+
+    if [ -f holbertonschool ]; then
+        echo "holbertonschool is a regular file"
     fi
 else 
     echo "holbertonschool file does not exist" 
