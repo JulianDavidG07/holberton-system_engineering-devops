@@ -32,7 +32,9 @@ On a whiteboard, design a three servers web infrastructure that host the website
 
 Requirements:
 
+
 You must add:
+
 2 servers
 1 web server (Nginx)
 1 application server
