@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# bash script to nginx on server
-sudo apt-get -y update && sudo apt-get install -y nginx
-
-ufw allow 'Nginx HTTP'
+#! Script to install Nginx in a server
+apt-get -y update
+apt-get install -y nginx
+sudo sed -i '0,/listen.*/s/listen.*/listen 80 default_server;/' /etc/nginx/sites-enabled/default
+echo "Holberton School" > /usr/share/nginx/html/index.html
 echo "Holberton School" > /var/www/html/index.html
-sudo service nginx start 
+service nginx restart
